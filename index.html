@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maria Luísa Rocha | Arctic weather hazards, polar lows, and atmospheric science research.">
+  <title>Maria Luísa Rocha | Atmospheric Scientist</title>
+  <style>
+    :root { --ink:#142c3a; --muted:#526574; --teal:#136f76; --pale:#edf5f5; --line:#dbe6e9; --paper:#fcfdfc; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--paper); color:var(--ink); line-height:1.7; }
+    a { color:var(--teal); text-decoration-thickness:1px; text-underline-offset:3px; }
+    header { border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:10; }
+    .wrap { width:min(1040px,calc(100% - 44px)); margin:auto; }
+    .nav { min-height:72px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:15px; }
+    .brand { font-weight:750; letter-spacing:-.02em; font-size:1.15rem; text-decoration:none; color:var(--ink); }
+    nav { display:flex; flex-wrap:wrap; gap:19px; } nav a { font-size:.92rem; text-decoration:none; color:var(--muted); }
+    nav a:hover,nav a:focus { color:var(--teal); }
+    .hero { padding:100px 0 93px; background:linear-gradient(120deg,#eaf4f3,#f6faf9 57%,#e8eff4); }
+    .eyebrow { color:var(--teal); font-weight:750; letter-spacing:.14em; text-transform:uppercase; font-size:.75rem; }
+    h1 { font-size:clamp(2.5rem,6vw,5rem); line-height:1.1; letter-spacing:-.055em; margin:13px 0 21px; }
+    .subtitle { font-size:clamp(1.1rem,2.4vw,1.42rem); line-height:1.5; max-width:710px; }
+    .intro { max-width:710px; color:var(--muted); font-size:1.05rem; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+    .button { background:var(--teal); color:#fff; text-decoration:none; border-radius:7px; padding:11px 17px; font-weight:650; }
+    .button.alt { background:transparent; color:var(--teal); border:1px solid var(--teal); }
+    section { padding:72px 0; border-bottom:1px solid var(--line); }
+    h2 { font-size:clamp(1.7rem,3vw,2.3rem); letter-spacing:-.035em; margin:0 0 19px; }
+    h3 { margin:0 0 9px; font-size:1.14rem; }
+    section > .wrap > p { max-width:800px; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:27px; }
+    .card { background:#fff; border:1px solid var(--line); padding:25px; border-radius:11px; }
+    .card p { margin:0; color:var(--muted); font-size:.96rem; }
+    .note { border-left:3px solid var(--teal); background:var(--pale); padding:12px 19px; margin:24px 0; color:var(--muted); }
+    footer { padding:35px 0; color:var(--muted); font-size:.9rem; }
+    @media(max-width:690px){.hero{padding:65px 0}.cards{grid-template-columns:1fr}section{padding:48px 0}.nav{padding:13px 0}nav{gap:12px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="#home">Maria Luísa Rocha</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#cv">CV</a><a href="#contact">Contact</a></nav></div></header>
+  <main>
+    <div id="home" class="hero"><div class="wrap"><div class="eyebrow">Atmospheric science · Arctic weather</div><h1>Maria Luísa Rocha</h1><p class="subtitle">PhD Candidate in Earth, Environmental, and Planetary Sciences at Brown University</p><p class="intro">I study Arctic weather hazards, with a focus on polar lows, air–sea interactions, numerical atmospheric modeling, and risks to maritime activity.</p><div class="actions"><a class="button" href="#research">Explore my research</a><a class="button alt" href="#publications">Publications</a></div></div></div>
+    <section id="about"><div class="wrap"><h2>About</h2><p>I am a PhD candidate at Brown University studying how atmospheric processes shape hazardous weather in the Arctic. My research brings together numerical weather modeling, atmospheric dynamics, and questions about maritime safety. I am particularly interested in understanding why polar lows intensify and how better weather information can support decisions in high-latitude environments.</p><p>This website is a starting point for sharing my research, publications, and professional activities.</p></div></section>
+    <section id="research"><div class="wrap"><h2>Research</h2><div class="cards"><article class="card"><h3>Polar lows and Arctic storms</h3><p>Understanding the development and intensity of compact Arctic cyclones through atmospheric modeling and dynamical analysis.</p></article><article class="card"><h3>Marine cold-air outbreaks</h3><p>Studying how cold-air outbreaks and air–sea heat exchanges influence polar low development.</p></article><article class="card"><h3>Sea ice and maritime hazards</h3><p>Connecting Arctic weather and sea-ice research with risks relevant to marine operations.</p></article></div></div></section>
+    <section id="publications"><div class="wrap"><h2>Publications</h2><p>Selected peer-reviewed publications and manuscripts will appear here.</p><div class="note">Before publishing, replace this placeholder with verified paper titles, authors, journals, years, and DOI links. Avoid posting unpublished material without checking permissions.</div></div></section>
+    <section id="cv"><div class="wrap"><h2>Curriculum vitae</h2><p>A downloadable CV can be added here after the latest version is reviewed.</p><p>Education: PhD candidate, Brown University; MS, Brown University; BS in Meteorology, Federal University of Rio de Janeiro.</p></div></section>
+    <section id="contact"><div class="wrap"><h2>Contact</h2><p>For research collaborations, speaking invitations, or questions about my work, please contact me through Brown University.</p><p><em>Add your preferred public email address and professional links here.</em></p></div></section>
+  </main>
+  <footer><div class="wrap">© <span id="year">2026</span> Maria Luísa Rocha · Built with GitHub Pages</div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
